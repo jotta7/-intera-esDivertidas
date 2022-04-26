@@ -1,0 +1,70 @@
+
+body {
+    background: rgb(27, 129, 189);
+    font: 15pt arial;
+}
+header{
+    text-align: center;
+    color: #fff;
+}
+section{
+    margin: auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397) ; /*lateral vertical espalhamento*/
+}
+div{
+    text-align: center;
+}
+p{
+    text-align: center;
+    
+}
+h1{
+   text-align: center; 
+}
+footer{
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+img{
+    width: 250px;
+    height: 187px;
+    border-radius: 30%;
+    
+}
+
+#sellist{
+    position: static;
+    margin-right: 60%;
+    border: solid 3px #0C387A;
+}
+.submit{
+    margin-right: 60%;
+    padding: 8px;
+    width: 100px;
+    background: #0C387A;
+    border-style: none;
+    border-radius: 8px;
+    padding: 15px;
+    color:#fff;
+    font-family: impact;
+    letter-spacing: 2px;
+}
+.submit:hover{
+    background: orange;
+    transition: 1s;
+    cursor: pointer;
+}
+#reslist{
+    position: absolute;
+    left: 46%;
+    font-size: 12pt;
+    text-align: start;
+    border: solid 3px #0C387A ;
+    width: auto;
+    
+}

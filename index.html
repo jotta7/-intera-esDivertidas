@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>INFORMAÇÕES e INTERAÇÕES</h1>
+    </header>
+    
+    <section class="sectday">
+        <p id="boa"></p>
+        <div id="msg">
+            
+        </div>
+        <div id="fotos">
+            <img src="./img/manha.png" alt="amanhecer">
+        </div>
+    </section><br><br>
+<!--VERIFICADOR DE IDADES-->    
+    <section class="sectidade" > 
+        <h1>verificador de idades</h1>
+        <div>
+            <label for="idade">Ano de nascimento:</label>  
+            <input type="datetime" class="idade" id="txtano" min="0" maxlength="4">
+            <br><br>
+            <label for="radio">sexo</label>
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="sexo">MACULINO</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="sexo">FEMININO</label>
+            <br><br>
+            <input type="button" class="submit" value="Verificar" onclick="verificar()">
+            <br>
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado.</p>
+        </div>
+    </section>
+    <br><br>
+<!--CONTADOR SEQUENCIAL-->    
+    <section>
+        <h1>vamos contar?</h1>
+        <div>
+            <label for="inicio">1° Número</label>
+            <input type="number" name="inicio" id="inicio" >
+            <br>
+            <label for="fim">2° Número</label>
+            <input type="number" name="fim" id="fim" >
+            <br>
+            <label for="passo">Passo</label>
+            <input type="number" name="passo" id="passo" ><br><br>
+            <input type="submit" class="submit" value="Contar" onclick="contar()" id="" >
+            </div>
+        <div id="contagem">
+            contagem...
+        </div>
+    </section>
+    <br><br>
+<!--TABUADA-->    
+    <section>
+        <h1>Colazinha na Tabuada</h1>
+        <div>
+            <label for="numero">Numero:</label>
+            <input type="number" id="bnun">
+            <div>
+                <select name="tabuada" id="seltab">
+                    <option value="Digite um número acima">Digite um número acima</option>p
+                </select>
+            </div>
+            <input type="submit" class="submit" value="Gerar" id="tabbutun" onclick="tabuada()">
+        </div>
+        
+    </section>
+    <br><br>
+<!--LISTA-->    
+    <section>
+        <h1>Lista com analize</h1>
+        <div>
+            <label for="numero">Numero (entre 1 e 100)</label>
+            <input type="number" id="lnum">
+            <input type="submit" class="submit" value="Adicionar" id="botfinali" onclick="adicionar()">
+            <br><br>
+            <div id="reslist"></div>
+            <select name="lista" id="sellist" size="10">
+                <option>Itens da lista</option>p
+            </select>
+            <br><br>
+            <input type="button" class="submit" id="botfinali" value="Finalizar" onclick="finalizar()">
+            
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; Jorge Lucas</p>
+    </footer>
+    <script src="script.js"></script> <!-- script src depois coloca o nome da pasta e pressiona (Ctrl e clica)-->
+    <!--pexels.com pt-br (tem imagens gratuitas p voce baixar)-->
+</body>
+</html>
